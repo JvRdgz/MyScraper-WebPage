@@ -1,8 +1,7 @@
 # My Scraper web page
 
 ## Description
-My Scraper web page is a simple web where users can find info about
-My Scraper app like tutorials, manuals, how it works, how to operate
-whit it, as well as the link to use the web link of the web app version.
+It is a simple website where users can find information about
+My Scraper as tutorials on how to operate with it, information about the advantages that you get, as well as the link to use the web version of the application and the download links of the mobile version.
 
 Developed by Javier Rodríguez Montero.
