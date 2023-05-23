@@ -1,0 +1,22 @@
+body, h1 {
+    font-family: "Raleway", sans-serif
+}
+
+body, html {
+    height: 100%
+}
+
+.bgimg {
+    /* background-image: url('/w3images/forestbridge.jpg'); */
+    background-color: #181d27;
+    /* background-image: url(../img/Final_File-01_desenfocado.png); */
+    min-height: 100%;
+    background-position: center;
+    background-size: cover;
+}
+.green{
+    color: #47b047;
+}
+/*.img-header {
+	max-width: 125px;
+}*/
