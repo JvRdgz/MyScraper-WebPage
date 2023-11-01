@@ -20,3 +20,7 @@ body, html {
 /*.img-header {
 	max-width: 125px;
 }*/
+
+.cursiva {
+    font-style: italic;
+  }
