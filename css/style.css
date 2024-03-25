@@ -4,8 +4,9 @@ h1 {
     font-family: "Raleway", sans-serif
 }
 
-body {
+body, html {
     background-color: #181d27;
+    height: 100%;
 }
 
 ul {
