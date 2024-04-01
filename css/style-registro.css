@@ -147,8 +147,8 @@ ul {
     }
 }
 
-/*LOGIN*/
-.login-container {
+/*REGISTRO*/
+.registro-container {
     display: flex;
     /*justify-content: center;*/
     align-items: center;
@@ -157,7 +157,8 @@ ul {
 
   }
   
-  .login-form {
+  .registro-form {
+    margin-top: 20%;
     background-color: #232b3b;
     padding: 40px;
     border-radius: 10px;
@@ -202,13 +203,13 @@ ul {
     border-top: 1px solid #ccc;
   }
   
-  .login-content {
+  .registro-content {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.login-image {
+.registro-image {
     width: 40%; /* Ajusta el ancho de la imagen según sea necesario */
     margin-right: 20px; /* Ajusta el margen entre la imagen y los formularios */
     margin-top: 100px;
