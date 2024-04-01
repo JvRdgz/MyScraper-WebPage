@@ -143,3 +143,72 @@ ul {
         line-height: 2.5em;
     }
 }
+
+/*LOGIN*/
+.login-container {
+    display: flex;
+    /*justify-content: center;*/
+    align-items: center;
+    height: 100vh;
+    flex-direction: column; /* Agregar esta línea para colocar los elementos en columnas */
+
+  }
+  
+  .login-form {
+    background-color: #232b3b;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+  }
+  
+  .login-form h2 {
+    margin-bottom: 20px;
+  }
+  
+  .input-container {
+    margin-bottom: 20px;
+  }
+  
+  .input-container input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+
+  .btnLogin {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #47b047;
+    background-color: #181d27;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .btnLogin:hover {
+    background-color: #232b3b;
+  }
+
+  .separator {
+    width: 100%;
+    margin: 20px 0;
+    border: none;
+    border-top: 1px solid #ccc;
+  }
+  
+  .login-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-image {
+    width: 40%; /* Ajusta el ancho de la imagen según sea necesario */
+    margin-right: 20px; /* Ajusta el margen entre la imagen y los formularios */
+    margin-top: 100px;
+}
+
+  /*Login google*/

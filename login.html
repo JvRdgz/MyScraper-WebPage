@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>My Scraper</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="shortcut icon" type="image/vnd.microsoft.icon" href="img/favicon.ico" />
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/style.css">
+        <script src="https://apis.google.com/js/platform.js" async defer></script>
+        <script src="js/google.js" defer></script>
+        <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v10.0&appId=YOUR_APP_ID&autoLogAppEvents=1" nonce="YOUR_NONCE_VALUE"></script> <!--SUSTITUIR YOUR APP ID-->
+        <script src="js/facebook.js" defer></script>
+    </head>
+<body>
+    <div class="login-container">
+        <div class="login-content">
+            <img src="img/iphone15pro.png" alt="Imagen" class="login-image">
+            <form class="login-form" action="#" method="post">
+                <span style="font-size: 200%; color: white;">My Scrap</span><span class="green"
+                    style="font-size: 200%;">e</span><span style="font-size: 200%; color:white;">r</span>
+                <br><br>
+                <div class="input-container">
+                    <input type="email" placeholder="Correo electrónico" required>
+                </div>
+                <div class="input-container">
+                    <input type="password" placeholder="Contraseña" required>
+                </div>
+                <button class="btnLogin" type="submit">Iniciar sesión</button>
+                <br><br>
+                <hr class="separator">
+                <button class="btnLogin" id="google-signin-btn" type="button" onclick="handleGoogleSignIn()">Google</button>
+                <br><br>
+                <button class="btnLogin" id="facebook-login-btn" type="button"
+                    onclick="handleFacebookLogin()">Facebook</button><!--REVISAR EL BOTON LOGIN FACEBOOK-->
+                <br><br>
+                <a href="login-recovery.html" style="text-decoration: none;"><span>¿Olvidaste tu contraseña?</span></a>
+            </form>
+            <br>
+        </div>
+        <br>
+        <form class="login-form" action="#" method="post">
+            <span>¿No tienes cuenta?</span><a href="registro.html" style="text-decoration: none;"><span class="green"> Registrate</span></a>
+        </form>
+    </div>
+</body>
+</html>
