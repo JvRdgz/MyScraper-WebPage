@@ -6,7 +6,7 @@ h1 {
 
 body, html {
     /*background-color: #181d27;*/
-    background-image: url('img/bolsa-wallpaper.png');
+    /*background-image: url('img/bolsa-wallpaper.png');*/
     background-size: cover; /* Ajusta la imagen para cubrir todo el fondo */
     background-position: center; /* Centra la imagen en el fondo */
     height: 100%;
@@ -29,9 +29,32 @@ ul {
     line-height: 2.5em;
 }
 
+.description2 {
+    grid-template-columns: repeat(3, 1fr); /* Divide en tres columnas de igual ancho */
+    gap: 20px; /* Espacio entre las columnas */
+}
+
+.properties-app {
+    background-color: #232b3b;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+    color: #fff;
+    margin-right: 50px;
+}
+
+/* Elimina el margen derecho del último elemento */
+.properties-app:last-child {
+    margin-right: 0;
+}
+
+/* Estilos adicionales según sea necesario */
+
+
 .bgimg {
     /* background-image: url('/w3images/forestbridge.jpg'); */
     background-color: #181d27;
+    /*background-image: url('../img/bolsa-wallpaper-1.png');*/
     /* background-image: url(../img/Final_File-01_desenfocado.png); */
     min-height: 100%;
     background-position: center;
@@ -57,11 +80,13 @@ ul {
 .topnav {
     overflow: hidden;
     /* background-color: rgb(87, 13, 13); */
-    background-color: #0b0d11;
-    /* position: fixed;
-    top: 0px;
+    background-color: #181d27;
+    /*background-image: url('../img/bolsa-wallpaper-1.png');
+    background-size: 50%;*/
+    /*top: 0px;
     width: 100%;
     display: block; */
+    
 }
 
 .topnav a {
@@ -78,11 +103,12 @@ ul {
 .topnav-left a {
     float: left;
     display: block;
-    color: #f2f2f2;
+    color: #cac9c9;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
     font-size: 30px;
+
 }
 
 .topnav a:hover {
@@ -91,6 +117,7 @@ ul {
 
 .topnav a.active {
     color: white;
+    
 }
 
 .topnav .icon {
@@ -100,12 +127,12 @@ ul {
 .footer {
     text-align: center;
     padding: 3px;
-    color: white;
+    color: #cccaca;
     position: bottom;
     left: 0;
     bottom: 0;
     width: 100%;
-    background-color: #337733;
+    background-color: #181d27;
 }
 
 @media screen and (max-width: 600px) {
@@ -212,6 +239,14 @@ ul {
     width: 40%; /* Ajusta el ancho de la imagen según sea necesario */
     margin-right: 20px; /* Ajusta el margen entre la imagen y los formularios */
     margin-top: 100px;
+}
+
+.properties-app {
+    display: inline-block;
+    width: 25%;
+    border: 3px solid #2c3d5c;
+    padding-right: 1%;
+    padding-left: 1%;
 }
 
   /*Login google*/
