@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Scraper</title>
+    <link rel="shortcut icon" type="image/vnd.microsoft.icon" href="img/favicon.ico" />
+
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Barra de navegación -->
+    <header>
+        <nav>
+            <a href="index.html">
+                <div class="logo">
+                    <img src="img/logo.png" alt="Logo" />
+                    <img src="img/myscraper-letters.png" alt="My Scraper" />
+                </div>
+            </a>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="security-page.html" class="unstyled-link">Security</a></li>
+                <li><a href="about-us.html" class="unstyled-link">Team</a></li>
+                <!-- <li>Contact</li> -->
+                <!--<li>Support</li>-->
+            </ul>
+
+        </nav>
+    </header>
+
+    <!-- Panel de Seguridad - Información Actualizada -->
+    <section class="seguridad-presentation-scroll">
+        <div class="seguridad-presentation-text">
+            <h2>
+                <span>SECURITY</span>
+                <span> & </span>
+                <span>PRIVACY</span>
+            </h2>
+            <h3>OUR COMMITMENT</h3>
+        </div>
+
+        <!-- Frontend Protection (Flutter + Dart) -->
+        <div class="seguridad-security-section">
+            <h3>Frontend Protection (Flutter + Dart)</h3>
+            <div class="security-item">
+                <h4>Native Compilation and Obfuscation</h4>
+                <p class="presentation-p">MyScraper is built with Flutter and compiled into native binaries, making it much harder to reverse
+                    engineer.
+                    Additionally, we use code obfuscation techniques that further mask our application’s structure and
+                    logic to
+                    protect sensitive components.</p>
+            </div>
+            <div class="security-item">
+                <h4>Secure Key Management</h4>
+                <p class="presentation-p">We never store API keys (for Firebase, Alchemy, and other services) directly in our source code.
+                    Instead, we
+                    rely on secure methods—such as encrypted environment variables or Firebase Remote Config—to load
+                    these
+                    credentials during runtime. This approach prevents unauthorized parties from discovering and
+                    exploiting these
+                    keys in the event of a code leak.</p>
+            </div>
+            <div class="security-item">
+                <h4>Client-Side Validation</h4>
+                <p class="presentation-p">While MyScraper implements basic input checks on the frontend—such as validating user inputs for
+                    convenience—all critical security checks are handled by secure backend services. This separation
+                    ensures that
+                    even if attackers tamper with the app, they cannot bypass important validations performed on the
+                    server.</p>
+            </div>
+        </div>
+
+        <!-- Secure Communication (Network/API) -->
+        <div class="seguridad-security-section">
+            <h3>Secure Communication (Network/API)</h3>
+            <div class="security-item">
+                <h4>HTTPS Encryption</h4>
+                <p class="presentation-p">We enforce HTTPS for all communication between MyScraper, Firebase, and Alchemy’s API. This ensures
+                    data in
+                    transit, including user credentials and blockchain-related requests, is encrypted and protected from
+                    eavesdropping or interception.</p>
+            </div>
+            <div class="security-item">
+                <h4>Restricted API Keys</h4>
+                <p class="presentation-p">Our API keys for Alchemy and other services are configured with domain or IP restrictions where
+                    possible.
+                    This limits the environment in which keys can be used, reducing the risk of unauthorized or
+                    malicious use.</p>
+            </div>
+        </div>
+
+        <!-- Firebase Security -->
+        <div class="seguridad-security-section">
+            <h3>Firebase Security</h3>
+            <div class="security-item">
+                <h4>Firebase Authentication</h4>
+                <p class="presentation-p">MyScraper uses Firebase Authentication to securely manage user sign-ins. We support multiple login
+                    methods
+                    (e.g., email/password, Google). Each authenticated user receives a secure token that our backend
+                    checks before
+                    granting access to resources, ensuring that only authorized users can interact with the system.</p>
+            </div>
+            <div class="security-item">
+                <h4>Firestore Security Rules</h4>
+                <p class="presentation-p">We implement stringent Firestore rules to control which data each user can read and write. These
+                    rules are
+                    regularly updated to reflect MyScraper’s evolving functionality and to address potential security
+                    gaps,
+                    ensuring that user data and notifications remain protected at all times.</p>
+            </div>
+            <div class="security-item">
+                <h4>Cloud Functions</h4>
+                <p class="presentation-p">Whenever we need to perform sensitive tasks—like processing large volumes of blockchain transaction
+                    data or
+                    advanced business logic—we rely on Firebase Cloud Functions. These server-side functions can only be
+                    triggered
+                    by authenticated requests, keeping the most critical processes out of reach from unauthorized
+                    manipulation.
+                </p>
+            </div>
+        </div>
+
+        <!-- Scraper Abuse Prevention -->
+        <div class="seguridad-security-section">
+            <h3>Scraper Abuse Prevention</h3>
+            <div class="security-item">
+                <h4>Usage Limits</h4>
+                <p class="presentation-p">To avoid excessive or malicious use of MyScraper’s transaction monitoring features, we implement rate
+                    limits
+                    and quotas per user or session. Users exceeding these limits may be temporarily throttled or
+                    blocked,
+                    safeguarding the platform’s performance and availability for everyone.</p>
+            </div>
+            <div class="security-item">
+                <h4>Input Sanitization</h4>
+                <p class="presentation-p">Before our app processes any user-provided data (such as addresses or custom filters for
+                    transactions), we
+                    apply thorough validation and sanitization. This reduces the risk of injection attacks or any misuse
+                    that
+                    could compromise our system or partner APIs.</p>
+            </div>
+            <div class="security-item">
+                <h4>Monitoring and Alerts</h4>
+                <p class="presentation-p">We closely monitor usage metrics—like request volume and error rates—to detect suspicious patterns.
+                    Automatic
+                    alerts notify our team of any unusual behavior, enabling quick investigation and response to
+                    potential
+                    threats.</p>
+            </div>
+        </div>
+
+        <!-- Best Practices and Additional Security Measures -->
+        <div class="seguridad-security-section">
+            <h3>Best Practices and Additional Security Measures</h3>
+            <div class="security-item">
+                <h4>Firebase App Check</h4>
+                <p class="presentation-p">We enable Firebase App Check to confirm that requests to our backend and database services originate
+                    specifically from the genuine MyScraper application, preventing unauthorized clients or automated
+                    bots from
+                    misusing our resources.</p>
+            </div>
+            <div class="security-item">
+                <h4>Role-Based Access Control</h4>
+                <p class="presentation-p">MyScraper’s architecture allows us to assign different permission levels (e.g., admin, standard
+                    user). This
+                    ensures each user can only view and manage the data they are authorized to handle, minimizing the
+                    impact of
+                    any single account being compromised.</p>
+            </div>
+            <div class="security-item">
+                <h4>Logging and Monitoring</h4>
+                <p class="presentation-p">We maintain extensive logs of system events, API calls, and user actions. These logs are continuously
+                    monitored, and our security team conducts regular audits to detect anomalies. Should a security
+                    incident
+                    occur, our logging infrastructure enables swift troubleshooting and remediation.</p>
+            </div>
+        </div>
+
+        <div class="security-summary">
+            <p class="presentation-p">By integrating these robust measures—across the frontend, backend, and the communication layers—MyScraper
+                provides a secure environment for receiving real-time blockchain transaction notifications, safeguarding
+                both
+                user data and our internal systems against evolving threats.</p>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-column">
+                <h4>Company</h4>
+                <ul>
+                    <li><a href="about-us.html">About us</a></li>
+                    <li><a href="terms-and-conditions.html">Terms</a></li>
+                    <li><a href="policy.html">Privacy</a></li>
+                    <li><a href="security-page.html">Security</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Socials</h4>
+                <ul>
+                    <li><a href="https://www.linkedin.com/company/myscraper-llc/">LinkedIn</a></li>
+                    <li><a
+                            href="https://www.instagram.com/myscraper_es?igsh=enduN3B4cjU3ajB2&utm_source=qr">Instagram</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© My Scraper 2025</p>
+        </div>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
