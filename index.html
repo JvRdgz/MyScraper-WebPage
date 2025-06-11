@@ -1,28 +1,148 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 
 <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Scraper</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" type="image/vnd.microsoft.icon" href="img/favicon.ico" />
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-    <div class="bgimg w3-display-container w3-animate-opacity w3-text-white">
-        <div class="w3-display-topleft w3-padding-large w3-xxlarge">
-            MY SCRAP<span class="green">E</span>R
+
+    <!-- Barra de navegación -->
+    <header>
+        <nav>
+            <a href="index.html">
+                <div class="logo">
+                    <img src="img/logo.png" alt="Logo" />
+                    <img src="img/myscraper-letters.png" alt="My Scraper" />
+                </div>
+            </a>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="security-page.html" class="unstyled-link">Security</a></li>
+                <li><a href="about-us.html" class="unstyled-link">Team</a></li>
+                <!-- <li>Contact</li> -->
+                <!--<li>Support</li>-->
+            </ul>
+
+        </nav>
+    </header>
+
+    <!-- Panel 1: Sección Hero -->
+    <section class="hero">
+        <h1>Get real-time transactions notifications</h1>
+        <div class="download-buttons">
+            <a href="#" class="btn-ios">
+                <img src="img/apple.png" alt="Download on the App Store" />
+            </a>
+            <a href="#" class="btn-android">
+                <img src="img/android.png" alt="Get it on Google Play" />
+            </a>
         </div>
-        <div class="w3-display-middle w3-center coming-soon">
-            <h1 class="w3-jumbo w3-animate-top">COMING SOON...</h1>
-            <hr class="w3-border-grey" style="margin:auto;width:40%">
-	    <p class="w3-large">Aprovechar oportunidades marca la <span class="green">diferencia.</span></p>
+        <p class="info-disclaimer">
+            <i>Seizing opportunities makes the <span class="e">difference...</span></i>
+        </p>
+        <!-- Contenedor para la imagen del móvil -->
+        <div class="mobile-container">
+            <img src="img/homepage.png" alt="Móvil" class="mobile">
         </div>
+    </section>
+
+
+    <!--Section 2-->
+    <section class="presentation-scroll">
+        <div class="presentation-sticky">
+            <div class="presentation scroll-left visible">
+                <div class="presentation-text">
+                    <div class="logo-wrapper logo-align-left">
+                        <img src="img/myscraper-letters-grande.png" alt="My Scraper" />
+                    </div>
+                    <h3><span class="presentation-h3">PRESENTATION</span></h3>
+                    <p class="presentation-p">My Scraper is a cross-platform software that provides a <span
+                            class="e">real-time notification</span>
+                        service about wallet movements across different blockchains.</p>
+                    <br>
+                    <p class="presentation-p">It allows you to accurately track transactions and improve the efficiency
+                        of
+                        your operations.</p>
+                </div>
+
+                <div class="presentation-image">
+                    <div class="slider">
+                        <img src="img/login.png" class="slide active" />
+                        <img src="img/menu.png" class="slide" />
+                        <img src="img/homepage.png" class="slide" />
+                        <img src="img/transacciones.png" class="slide" />
+                    </div>
+                </div>
+
+
+
+            </div>
+        </div>
+    </section>
+
+
+    <section class="panel-logos">
+        <div class="supported-blockchains">
+            <h2 class="supported-title">SUPPORTED <span class="e">BLOCKCHAINS</span></h2>
+        </div>
+        <br>
+        <div class="logo-grid">
+            <img class="crypto-logo" src="img/avalanche-avax-logo.png" alt="AVAX" />
+            <img class="crypto-logo" src="img/bnb-bnb-logo.png" alt="BNB" />
+            <img class="crypto-logo" src="img/eth-logo.png" alt="ETH" />
+            <img class="crypto-logo" src="img/polygon-matic-logo.png" alt="POL" />
+            <img class="crypto-logo" src="img/solana-sol-logo.png" alt="SOLANA" />
+            <img class="crypto-logo" src="img/fantom-ftm-logo.png" alt="FNT" />
+            <img class="crypto-logo" src="img/arbitrum-arb-logo.png" alt="ARB" />
+            <img class="crypto-logo" src="img/base-logo-in-blue.png" alt="BASE" />
+        </div>
+        <br><br>
+        <p class="coming-soon">MORE BLOCKCHAINS IN COMMING...</p>
+    </section>
+
+    <!-- Popup de cookies -->
+    <div id="cookie-popup" class="cookie-popup hidden">
+        <p>We use cookies to improve your experience on My Scraper. <a href="policy.html">Read more</a></p>
+        <button id="accept-cookies" class="btn-accept">Accept</button>
     </div>
+    <script src="js/main.js"></script>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-column">
+                <h4>Company</h4>
+                <ul>
+                    <li><a href="about-us.html">About us</a></li>
+                    <li><a href="terms-and-conditions.html">Terms</a></li>
+                    <li><a href="policy.html">Privacy</a></li>
+                    <li><a href="security-page.html">Security</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Socials</h4>
+                <ul>
+                    <li><a href="https://www.linkedin.com/company/myscraper-llc/">LinkedIn</a></li>
+                    <li><a
+                            href="https://www.instagram.com/myscraper_es?igsh=enduN3B4cjU3ajB2&utm_source=qr">Instagram</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© My Scraper 2025</p>
+        </div>
+    </footer>
+
 </body>
 
 </html>

@@ -1,0 +1,36 @@
+{
+  "es": {
+    "hero.title": "Recibe notificaciones de transacciones en tiempo real",
+    "hero.subtitle": "La app cripto que te llevará lejos",
+    "hero.button": "Descargar para iOS/Android",
+    "hero.tagline": "Aprovechar oportunidades es lo que te hace destacar",
+    "nav.security": "Seguridad",
+    "nav.learn": "Aprender",
+    "nav.explore": "Explorar",
+    "nav.support": "Soporte",
+    "footer.product": "Producto",
+    "footer.resources": "Recursos",
+    "footer.company": "Empresa",
+    "footer.socials": "Redes",
+    "cookie.message": "Utilizamos cookies para mejorar tu experiencia en My Scraper.",
+    "cookie.readMore": "Leer más",
+    "cookie.accept": "Aceptar"
+  },
+  "en": {
+    "hero.title": "Get real-time transactions notifications",
+    "hero.subtitle": "The crypto app that’ll take you places",
+    "hero.button": "Download for iOS/Android",
+    "hero.tagline": "Seizing opportunities is what sets you apart",
+    "nav.security": "Security",
+    "nav.learn": "Learn",
+    "nav.explore": "Explore",
+    "nav.support": "Support",
+    "footer.product": "Product",
+    "footer.resources": "Resources",
+    "footer.company": "Company",
+    "footer.socials": "Socials",
+    "cookie.message": "We use cookies to enhance your experience on My Scraper.",
+    "cookie.readMore": "Read more",
+    "cookie.accept": "Accept"
+  }
+}
