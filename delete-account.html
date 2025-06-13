@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Delete My Account - My Scraper</title>
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="index.html">
+                <div class="logo">
+                    <img src="img/logo.png" alt="Logo" />
+                    <img src="img/myscraper-letters.png" alt="My Scraper" />
+                </div>
+            </a>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="security-page.html" class="unstyled-link">Security</a></li>
+                <li><a href="about-us.html" class="unstyled-link">Team</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="seguridad-presentation-scroll">
+        <div class="seguridad-presentation-text">
+            <h2><span>Delete</span> <span>My</span> <span>Account</span></h2>
+            <h3>Account Removal Request</h3>
+        </div>
+
+        <div class="delete-account-container">
+            <form id="deleteAccountForm">
+                <label for="email">Email address <span style="color: red">*</span></label>
+                <input type="email" id="email" name="email" required />
+
+                <label>Reason for deleting your account <span style="color: red">*</span></label>
+                <div class="radio-group">
+                    <div class="radio-option">
+                        <input type="radio" name="reason" value="I don't use the app anymore" required />
+                        <label>I don't use the app anymore</label>
+                    </div>
+                    <div class="radio-option">
+                        <input type="radio" name="reason" value="I don't find it useful" />
+                        <label>I don't find it useful</label>
+                    </div>
+                    <div class="radio-option">
+                        <input type="radio" name="reason" value="Concerned about privacy" />
+                        <label>Concerned about privacy</label>
+                    </div>
+                    <div class="radio-option">
+                        <input type="radio" name="reason" value="Switching to another service" />
+                        <label>Switching to another service</label>
+                    </div>
+                    <div class="radio-option">
+                        <input type="radio" name="reason" value="Other" />
+                        <label>Other</label>
+                    </div>
+                </div>
+
+                <label for="additional">Additional comments (optional):</label>
+                <textarea id="additional" name="additional" rows="4"></textarea>
+
+                <button type="submit" class="btn-download-chrome">Submit Request</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-column">
+                <h4>Company</h4>
+                <ul>
+                    <li><a href="about-us.html">About us</a></li>
+                    <li><a href="terms-and-conditions.html">Terms</a></li>
+                    <li><a href="policy.html">Privacy</a></li>
+                    <li><a href="security-page.html">Security</a></li>
+                    <li><a href="delete-account.html">Delete Account</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Socials</h4>
+                <ul>
+                    <li><a href="https://www.linkedin.com/company/myscraper-llc/">LinkedIn</a></li>
+                    <li><a href="https://www.instagram.com/myscraper_es?igsh=enduN3B4cjU3ajB2&utm_source=qr">Instagram</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© My Scraper 2025</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
