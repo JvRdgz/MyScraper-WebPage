@@ -806,54 +806,53 @@ nav {
     line-height: 1.4;
 }
 
-/* Popup central animado */
-.popup {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: #202533;
-    color: white;
-    padding: 2rem 2.5rem;
-    border-radius: 12px;
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
-    z-index: 9999;
-    text-align: center;
-    animation: fadeInPopup 0.4s ease-out;
-    max-width: 90%;
-    width: 400px;
+/* Popup modal de confirmación */
+.success-popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #202533;
+  color: white;
+  padding: 2rem 2.5rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+  z-index: 9999;
+  text-align: center;
+  max-width: 90%;
+  width: 400px;
+  animation: fadeInPopup 0.4s ease-out;
 }
 
-.popup p {
-    font-size: 1.2rem;
-    margin-bottom: 1.5rem;
+.success-popup p {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
 }
 
-.popup button {
-    background-color: #47b046;
-    border: none;
-    color: white;
-    padding: 0.6rem 1.5rem;
-    font-size: 1rem;
-    border-radius: 6px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+.success-popup button {
+  background-color: #47b046;
+  border: none;
+  color: white;
+  padding: 0.6rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
-.popup button:hover {
-    background-color: #dd1e1e;
+.success-popup button:hover {
+  background-color: #dd1e1e;
 }
 
 @keyframes fadeInPopup {
-    from {
-        opacity: 0;
-        transform: translate(-50%, -40%);
-    }
-
-    to {
-        opacity: 1;
-        transform: translate(-50%, -50%);
-    }
+  from {
+    opacity: 0;
+    transform: translate(-50%, -40%);
+  }
+  to {
+    opacity: 1;
+    transform: translate(-50%, -50%);
+  }
 }
 
 @media screen and (max-width: 768px) {
