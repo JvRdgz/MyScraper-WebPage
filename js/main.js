@@ -137,7 +137,8 @@ document.addEventListener("DOMContentLoaded", () => {
         const popup = document.createElement('div');
         popup.className = 'success-popup';
 
-        popup.innerHTML = `<p class="presentation-p">Your request has been submitted successfully.</p>
+        popup.innerHTML = `<p class="presentation-p">Your request has been submitted successfully. 
+            We will delete your personal data from our records.</p>
             <button id="popupCloseBtn">Continue</button>`;
 
         document.body.appendChild(popup);
