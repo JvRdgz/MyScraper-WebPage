@@ -120,10 +120,10 @@ document.addEventListener("DOMContentLoaded", () => {
             const date = new Date().toLocaleDateString();
 
             emailjs.send("service_7em3x0p", "template_btpck0r", {
-                email: "test@myscraper.es",
-                reason: "Testing",
-                additional: "No comments",
-                date: "2025-06-13"
+                email,
+                reason,
+                additional,
+                date
             }).then(() => {
                 showSuccessPopup();
             }).catch((error) => {
