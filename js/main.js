@@ -134,21 +134,17 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     function showSuccessPopup() {
-        const popup = document.createElement("div");
-        popup.className = "success-popup";
+        const popup = document.createElement('div');
+        popup.className = 'success-popup';
 
-        const message = document.createElement("p");
-        message.textContent = "Your request has been successfully submitted. We will delete your personal data from our records.";
+        popup.innerHTML = `<p>Your request has been submitted successfully.</p>
+            <button id="popupCloseBtn">Continue</button>`;
 
-        const button = document.createElement("button");
-        button.textContent = "Continue";
-        button.onclick = function () {
-            document.body.removeChild(popup);
-            window.location.href = "index.html";
-        };
-
-        popup.appendChild(message);
-        popup.appendChild(button);
         document.body.appendChild(popup);
+
+        const closeButton = document.getElementById('popupCloseBtn');
+        closeButton.addEventListener('click', () => {
+            popup.remove();
+        });
     }
 });
