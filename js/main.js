@@ -125,7 +125,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 additional,
                 date
             }).then(() => {
-                showSuccessPopup();
+                closePopup();
             }).catch((error) => {
                 alert("An error occurred while submitting the request. Please try again.");
                 console.error("EmailJS Error:", error);
@@ -133,47 +133,8 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 
-    function showSuccessPopup() {
-        const modal = document.createElement("div");
-        modal.style.position = "fixed";
-        modal.style.top = 0;
-        modal.style.left = 0;
-        modal.style.width = "100vw";
-        modal.style.height = "100vh";
-        modal.style.backgroundColor = "rgba(0,0,0,0.6)";
-        modal.style.display = "flex";
-        modal.style.alignItems = "center";
-        modal.style.justifyContent = "center";
-        modal.style.zIndex = 9999;
-
-        const box = document.createElement("div");
-        box.style.backgroundColor = "white";
-        box.style.padding = "30px";
-        box.style.borderRadius = "10px";
-        box.style.boxShadow = "0 0 20px rgba(0,0,0,0.2)";
-        box.style.textAlign = "center";
-        box.style.maxWidth = "90%";
-
-        const msg = document.createElement("p");
-        msg.innerText = "Your request has been successfully submitted.";
-        msg.style.marginBottom = "20px";
-
-        const btn = document.createElement("button");
-        btn.innerText = "OK";
-        btn.style.padding = "10px 20px";
-        btn.style.backgroundColor = "#47b046";
-        btn.style.color = "white";
-        btn.style.border = "none";
-        btn.style.borderRadius = "5px";
-        btn.style.cursor = "pointer";
-
-        btn.addEventListener("click", () => {
-            window.location.href = "index.html";
-        });
-
-        box.appendChild(msg);
-        box.appendChild(btn);
-        modal.appendChild(box);
-        document.body.appendChild(modal);
+    function closePopup() {
+        const popup = document.getElementById("confirmation-popup");
+        popup.classList.add("hidden");
     }
 });
